@@ -53,5 +53,25 @@
      # length.out 개수 지정
       var6 <- seq(from= 1 , by=3 , length.out=4)
     ~~~
-
+    
+    # 문자함수
+    ~~~
+    # paste(): 받은 인자값을 모두 합치는 함수
+    paste('Hello','World')
+    ~~~
+    ~~~
+    # collapse 구분자 추가
+    str <- c('apple','orange','pear')
+    paste(str, collapse=' : ')
+    ~~~
+    
+ # 숫자를 다루는 함수
+ 
+  * sum()
+  * max()
+  * min()
+  * mean()
+    
+    
+    
 
