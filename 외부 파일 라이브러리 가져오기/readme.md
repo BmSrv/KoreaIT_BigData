@@ -30,6 +30,11 @@
   library(dplyr)
  ~~~
 
+# qplot 그래프 패키지
+ ~~~html
+  library(qplot)
+ ~~~
+
   
 # csv 데이터 가져오기
  ~~~html
