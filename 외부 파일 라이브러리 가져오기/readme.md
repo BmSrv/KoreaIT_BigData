@@ -24,3 +24,9 @@
   ~~~
   library(ggplot2)
   ~~~
+  
+# csv 데이터 가져오기
+ ~~~html
+  v1 <- read.csv("파일경로")
+
+ ~~~
