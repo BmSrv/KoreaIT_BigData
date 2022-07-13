@@ -25,8 +25,15 @@
   library(ggplot2)
   ~~~
   
+# dplyr 데이터 전처리에 사용하는 패키지
+ ~~~html
+  library(dplyr)
+ ~~~
+
+  
 # csv 데이터 가져오기
  ~~~html
   v1 <- read.csv("파일경로")
 
  ~~~
+
