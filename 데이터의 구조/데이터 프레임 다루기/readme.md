@@ -29,7 +29,47 @@
   |'bms'|25|789|3|
   
   
-#데이터 프레임 함수
+      
+# 변수명 바꾸기
+  - rename(데이터 프레임, 새 변수명 = 기존 변수명)
+  ~~~html
+  
+  d_f <- rename(d_f, score=math_score)
+  
+  ~~~
+  |||||
+  |:-|:-|:-|:-|
+  |name|age|math_score|num|
+  |'jms'|23|123|1|
+  |'tjm'|25|456|2|
+  |'bms'|25|789|3|
+
+  
+# 파생 변수
+  //영어점수 추가
+  d_f <- data.frame(d_f,english_score=c(321,654,987))
+  
+  ||||||
+  |:-|:-|:-|:-|:-|
+  |name|age|math_score|num|english_score|
+  |'jms'|23|123|1|321|
+  |'tjm'|25|456|2|654|
+  |'bms'|25|789|3|987|
+  
+  ~~~html
+  d_f$mean_score <- (d_f$math_score+d_f$english_score)/2
+  ~~~
+  
+  |||||||
+  |:-|:-|:-|:-|:-|:-|
+  |name|age|math_score|num|english_score|mean_score|
+  |'jms'|23|123|1|321|222|
+  |'tjm'|25|456|2|654|555|
+  |'bms'|25|789|3|987|888|
+  
+
+  
+# 데이터 프레임 함수
   
    - head()
      - 데이터 앞부분 출력
@@ -64,11 +104,5 @@
          3rd Qu.:15.25   3rd Qu.:4   3rd Qu.:75.75   3rd Qu.:98.0   3rd Qu.:78.00  
          Max.   :20.00   Max.   :5   Max.   :90.00   Max.   :98.0   Max.   :98.00  
       ~~~
-      
   
-  
-  
-  
-  
-   
   
