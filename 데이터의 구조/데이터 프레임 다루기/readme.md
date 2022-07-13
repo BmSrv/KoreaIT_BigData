@@ -67,7 +67,16 @@
   |'tjm'|25|456|2|654|555|
   |'bms'|25|789|3|987|888|
   
-
+# 조건문으로 파생변수 생성
+  ~~~html
+    d_f$old <- ifelse(d_f$age>24,"True","False")
+  ~~~
+  ||||||||
+  |:-|:-|:-|:-|:-|:-|:-|
+  |name|age|math_score|num|english_score|mean_score|old|
+  |'jms'|23|123|1|321|222|False|
+  |'tjm'|25|456|2|654|555|True|
+  |'bms'|25|789|3|987|888|True|
   
 # 데이터 프레임 함수
   
